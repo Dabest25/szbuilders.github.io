@@ -1,0 +1,390 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+body {
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.5;
+    background-color: #ffffff; /* Primary color: white */
+    color: #000000; /* Secondary color: black */
+}
+
+/* Navigation Bar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 10px;
+    background-color: #ffffff; /* Primary color: white */
+    border-bottom: 3px solid #d4af37; /* Gold border for effect */
+    position: relative;
+    
+}
+.active, .navbar li{
+    text-decoration: none;
+    color: #000000;
+    padding: 5px;
+    
+
+}
+.active, .navbar li:hover{
+    background:#d4af37; 
+    border-width: 10px;
+    border-width: 50px;
+    border-radius: 1px;
+
+}
+/* Dropdown Container */
+.navbar .dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+/* Dropdown Button */
+.navbar .dropbtn {
+    background-color: inherit;
+    border: none;
+    cursor: pointer;
+    font: size 16px;
+    margin: 0;
+}
+
+/* Dropdown Content */
+.navbar .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    
+}
+
+/* Links inside the dropdown */
+.navbar .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    font-size: 14px;
+    width: 200px;
+    border-bottom: 1px solid #b8860b;
+}
+
+/* Change color of dropdown links on hover */
+.navbar .dropdown-content a:hover {
+    background-color: #f1f1f1;
+}
+
+/* Show the dropdown menu on hover */
+.navbar .dropdown:hover .dropdown-content {
+    display: block;
+    position:absolute;
+    
+}
+
+
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    height: 80px;
+    width: auto;
+    margin-right: 5px;
+}
+
+.company-name {
+    color: #000000; /* Secondary color: black */
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    margin: 0;
+}
+
+.nav-links li {
+    margin-left: 30px;
+    padding-right: 5px;
+}
+
+.nav-links a {
+    color: #000000; /* Secondary color: black */
+    text-decoration: none;
+    font-size: 18px;
+    font-weight:600;
+    transition: color 0.3s;
+}
+
+/* .nav-links a:hover {
+    color: #d4af37; 
+} */
+
+/* Home Section */
+.home-section {
+    height: 30rem;
+    padding: 7.5rem;
+    background-image: url(https://hexagon.com/-/media/project/one-web/master-site/altudo/l1139-specificindustry/buildings-main-marquee.jpg?iar=0&hash=35AFE5CD92010F7CFDBDE97A20B24CD9);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    color: #ffffff; /* Secondary color: black */
+    text-align:left;
+    background-color: rgba(0, 0, 0, 0.6); /* Black overlay with 40% opacity */
+    background-blend-mode: darken;
+    
+}
+.home-section p{
+    font-size: 24px;
+    margin-top: 0;
+}
+
+.home-content h1 {
+    font-size: 48px;
+    margin-bottom: 10px;
+    color: #ffffff; /* Secondary color: black */
+   
+}
+
+.cta-button {
+    padding: 10px 20px;
+    font-size: 20px;
+    color: #ffffff; /* White text */
+    background-color: #d4af37; /* Gold background for the button */
+    border: none;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #b8860b; /* Darker gold on hover */
+}
+
+/* Section Titles */
+section h2 {
+    color: #000000; /* Secondary color: black */
+    text-align: center;
+    margin-top: 50px;
+    font-size: 32px;
+}
+
+/*ABOUT US SECTION*/
+/* About Section */
+.about-section {
+    padding: 5px 60px;
+    background-color: #ffffff; /* Primary color: white */
+    color: #000000; /* Secondary color: black */
+}
+
+.about-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 4%;
+}
+
+.about-image img {
+    margin: 20px;
+    max-width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow for effect */
+    
+}
+
+.about-content {
+    max-width: 50%;
+    margin-left: 50px;
+    margin-top: 10px;
+}
+
+.about-content h2 {
+    font-size: 36px;
+    color:#d4af37; /* Secondary color: black */
+    margin-bottom: 5px;
+    margin-left:20px;
+    
+}
+
+.about-content p {
+    text-align:justify;
+    font-size: 20px;
+    line-height: 1.6;
+    color: #000000;
+    font-weight: 450;
+
+}
+
+/* Team Section */
+.team-container {
+    margin: 0 30px;
+    text-align: center;
+    background-color: #f9f9f9; /* Light gray for contrast */
+    border-radius: 10px;
+    box-shadow: 0 8px 10px black(0, 0, 0, 0.1); /* Subtle shadow for effect */
+    width: 100%;
+}
+
+.team-container h3 {
+    font-size: 36px;
+    color:#d4af37;
+    margin-bottom: 30px;
+    padding-top: 5px;
+}
+
+.team-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 0 50px;
+}
+
+.team-member {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content:space-between;
+    background-color: #ffffff; /* Optional: adds a background color to each team member card */
+    padding: 10px; /* Optional: adds padding inside each card */
+    border-radius: 10px; /* Optional: adds rounded corners to each card */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+
+}
+
+.team-member img {
+    max-width: 60%;
+    border-radius: 30%;
+}
+
+.team-member h4 {
+    font-size: 18px;
+    color: #000000; 
+}
+
+.team-member p {
+    font-size: 18px;
+    color: #d4af37;
+   
+}
+
+.burger-menu {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    position:absolute;
+    top: 10px;
+    right: 10px;
+}
+
+.burger-icon {
+    width: 30px;
+    height: 3px;
+    background-color: #000000; /* Secondary color: black */
+    margin: 5px 0;
+    transition: 0.3s;
+}
+
+
+/* --- Mobile-Friendly Additions --- */
+@media only screen and (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 10px;
+    }
+    
+    .nav-links {
+        flex-direction: column;
+        width: 100%;
+        margin-top: 10px;
+        display: none;
+    }
+    .nav-links.active{
+        display: flex;
+    }
+
+    .nav-links li {
+        margin-left: 0;
+        padding: 5px 0;
+    }
+    .burger-menu{
+        display: flex;
+        padding: 20px 5px;
+    }
+    .burger-menu.active .burger-icon:nth-child(1){
+        transform: rotate(-45deg) translate(-5px,6px);
+    }
+    .burger-menu.active .burger-icon:nth-child(2){
+    opacity: 0;
+    }
+    .burger-menu.active .burger-icon:nth-child(3){
+        transform: rotate(45deg) translate(-5px,-6px);
+    }
+
+    .home-section {
+        padding: 20px;
+        height: auto;
+    }
+
+    .home-content h1 {
+        font-size: 32px;
+    }
+
+    .home-section p {
+        font-size: 16px;
+    }
+
+    .about-container {
+        flex-direction: column;
+        margin: 20px 0;
+    }
+
+    .about-content {
+        max-width: 100%;
+        margin-left: 0;
+        margin-top: 20px;
+    }
+
+    .team-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+        
+    }
+
+    .team-member {
+        max-width: 100%;
+    }
+}
+
+
+
+
+/* Scroll to Top Button */
+#scrollToTopBtn {
+    display: none; /* Hidden by default */
+    position: fixed; /* Fixed/sticky position */
+    bottom: 20px; /* Place the button 20px from the bottom */
+    right: 20px; /* Place the button 20px from the right */
+    z-index: 99; /* Make sure it does not overlap */
+    background-color:gold;/* Black background */
+    color: black; /* White text */
+    border: none; /* Remove borders */
+    outline: none; /* Remove outline */
+    width: 60px; /* Set a specific width */
+    height: 60px; /* Set a specific height */
+    border-radius: 60%; /* Rounded corners */
+    font-size: 25px; /* Increase font size */
+    cursor: pointer; /* Add a mouse pointer on hover */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3); /* Add a shadow */
+}
+
+#scrollToTopBtn:hover {
+    color:gold;
+    background-color:rgb(0, 0, 0);
+}
+
